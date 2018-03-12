@@ -1,16 +1,15 @@
 
 /**
-  * Finding double of first even number greater than 3
+  * Find double of first even number greater than 3
   * using lazy evaluation
   */
-object WithLazyEvaluation extends App {
+object PlayingWithNumbersLazily extends App {
 
   val numbers = List(1, 2, 3, 5, 4, 6, 7, 8, 9, 10)
 
-
-
   def computeUsingLazyEvaluation(numbers: List[Int]): Int = {
-    numbers.view
+    numbers
+      .toStream
       .filter(UtilityMethods.findNumberGreaterThan3)
       .filter(UtilityMethods.findEvenNumber)
       .map(UtilityMethods.doubleTheValue)

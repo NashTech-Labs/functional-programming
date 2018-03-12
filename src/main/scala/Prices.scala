@@ -1,6 +1,6 @@
 
-/*
- find the total of prices greater than $20, discounted by 10%.
+/**
+ * Find the total of prices greater than $20, discounted by 10%.
  */
 object Prices extends App{
 
@@ -16,7 +16,10 @@ object Prices extends App{
 
   println(s"total of discounted prices $totalDiscountPrices")
 
-  val totalDiscountPricesUsingFP = prices.filter(_ > 20).map(_ * 0.9).sum
+  val totalDiscountPricesUsingFP = prices
+    .filter(_ > 20)
+    .map(_ * 0.9)
+    .sum
 
   println(s"total of discounted prices using Functional Composition " +
     s"$totalDiscountPricesUsingFP")

@@ -2,7 +2,7 @@ import scala.util.control.Breaks._
 
 object Cities extends App{
 
-  //imperiative style of coding
+  //imperative style of coding
   def findCity(list: List[String], city: String) = {
     var flag = false
 
