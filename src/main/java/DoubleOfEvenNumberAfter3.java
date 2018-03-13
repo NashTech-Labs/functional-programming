@@ -7,8 +7,8 @@ public class DoubleOfEvenNumberAfter3 {
         Integer result = null;
 
         for(int e : numbers) {
-            if(UtilityMethods.findNumberGreaterThan3(e) && UtilityMethods.findEvenNumber(e)) {
-                result = UtilityMethods.doubleTheValue(e);
+            if(Utility.findNumberGreaterThan3(e) && Utility.findEvenNumber(e)) {
+                result = Utility.doubleTheValue(e);
                 break;
             }
         }

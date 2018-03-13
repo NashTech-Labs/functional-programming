@@ -17,8 +17,8 @@ object Prices extends App{
   println(s"total of discounted prices $totalDiscountPrices")
 
   val totalDiscountPricesUsingFP = prices
-    .filter(_ > 20)
-    .map(_ * 0.9)
+    .filter(e => e > 20)
+    .map(e => e * 0.9)
     .sum
 
   println(s"total of discounted prices using Functional Composition " +

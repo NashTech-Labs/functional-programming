@@ -10,9 +10,9 @@ object PlayingWithNumbersFunctionally extends App {
 
   def computeFunctionally(numbers: List[Int]): Int = {
     numbers
-      .filter(UtilityMethods.findNumberGreaterThan3)
-      .filter(UtilityMethods.findEvenNumber)
-      .map(UtilityMethods.doubleTheValue)
+      .filter(Utility.findNumberGreaterThan3)
+      .filter(Utility.findEvenNumber)
+      .map(Utility.doubleTheValue)
       .head
   }
 

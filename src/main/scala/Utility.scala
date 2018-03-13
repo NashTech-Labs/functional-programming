@@ -2,20 +2,20 @@
 /**
   * Commonly used methods
   */
-object UtilityMethods {
+object Utility {
 
   def findNumberGreaterThan3(number: Int): Boolean = {
-    println("Inside findNumberGreaterThan3")
+    println(s"Inside findNumberGreaterThan3 with number $number")
     number > 3
   }
 
   def findEvenNumber(number: Int): Boolean = {
-    println("Inside findEvenNumber")
+    println(s"Inside findEvenNumber with number $number")
     number % 2 == 0
   }
 
   def doubleTheValue(number: Int): Int = {
-    println("Inside doubleTheValue")
+    println(s"Inside doubleTheValue with number $number")
     number * 2
   }
 }

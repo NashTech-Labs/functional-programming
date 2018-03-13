@@ -10,9 +10,9 @@ object PlayingWithNumbersLazily extends App {
   def computeUsingLazyEvaluation(numbers: List[Int]): Int = {
     numbers
       .toStream
-      .filter(UtilityMethods.findNumberGreaterThan3)
-      .filter(UtilityMethods.findEvenNumber)
-      .map(UtilityMethods.doubleTheValue)
+      .filter(Utility.findNumberGreaterThan3)
+      .filter(Utility.findEvenNumber)
+      .map(Utility.doubleTheValue)
       .head
   }
 

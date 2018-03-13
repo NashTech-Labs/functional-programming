@@ -12,8 +12,8 @@ object PlayingWithNumbers extends App {
     var result = 0
     breakable {
       for(num <- numbers){
-        if (UtilityMethods.findNumberGreaterThan3(num) && UtilityMethods.findEvenNumber(num)) {
-          result = num * 2
+        if (Utility.findNumberGreaterThan3(num) && Utility.findEvenNumber(num)) {
+          result = Utility.doubleTheValue(num)
           break
         }
       }
